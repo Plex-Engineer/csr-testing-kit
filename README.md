@@ -23,7 +23,7 @@ node scripts/getNonce.js
 ```
 
 ## Sample hardhat.config.js
-```json
+```javascript
 require("@nomicfoundation/hardhat-toolbox");
 
 /** @type import('hardhat/config').HardhatUserConfig */
