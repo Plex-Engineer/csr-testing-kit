@@ -21,3 +21,20 @@ npx hardhat run scripts/tx.js --network <NETWORK>
 # get nonce of account
 node scripts/getNonce.js
 ```
+
+## Sample hardhat.config.js
+```json
+require("@nomicfoundation/hardhat-toolbox");
+
+/** @type import('hardhat/config').HardhatUserConfig */
+module.exports = {
+  solidity: "0.8.17",
+  networks: {
+    localhost: {
+      url: `http://localhost:8545`,
+      accounts: [""]
+    }
+  }
+};
+
+```
